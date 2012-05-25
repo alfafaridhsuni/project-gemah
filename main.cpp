@@ -32,9 +32,9 @@ GLuint tex_2d5;
 GLuint tex_2d6;
 
 /* storage for one texture  */
-GLuint texture[1];
+GLuint texture[6];
 
-GLuint LoadGLTextures(int i, char* filename);
+GLuint LoadGLTextures(const char* filename);
 void drawCube();
 
 void init();
@@ -66,7 +66,7 @@ int main(int argc, char* argv[])
     return 0;
 }
 
-GLuint LoadGLTextures(char* filename)                             // Load Bitmaps And Convert To Textures
+GLuint LoadGLTextures(const char* filename)                             // Load Bitmaps And Convert To Textures
 {
     /* load an image file directly as a new OpenGL texture */
     tex_2d = SOIL_load_OGL_texture(filename,
@@ -95,6 +95,10 @@ GLuint LoadGLTextures(char* filename)                             // Load Bitmap
 
 void init()
 {
+    tex_2d1 =  LoadGLTextures("NeHe.bmp");
+    tex_2d2 =  LoadGLTextures("floor.tga");
+    tex_2d3 =  LoadGLTextures("background.bmp");
+    tex_2d4 =  LoadGLTextures("3.jpg");
     glEnable(GL_TEXTURE_2D);
     glShadeModel(GL_SMOOTH);
     glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
@@ -106,8 +110,6 @@ void init()
     glLightfv(GL_LIGHT1, GL_DIFFUSE, LightDiffuse);
     glLightfv(GL_LIGHT1, GL_POSITION, LightPosition);
     glEnable(GL_LIGHT1);
-
-
 }
 
 void myKeyboard(unsigned char key, int x, int y)
@@ -121,6 +123,7 @@ void myKeyboard(unsigned char key, int x, int y)
         case '>':
         case '.':
                 z_pos += 0.1f;
+                yRot+=90.0f;		                // Y Axis Rotation
                 break;
 
         case 27:
@@ -147,9 +150,9 @@ void myDisplay(void)
 
     drawCube();
 
-//    xRot+=15.0f;		                // X Axis Rotation
-    yRot+=15.0f;		                // Y Axis Rotation
-//    zRot+=15.0f;		                // Z Axis Rotation
+    xRot+=0.1f;		                // X Axis Rotation
+    yRot+=0.1f;		                // Y Axis Rotation
+    zRot-=0.1f;		                // Z Axis Rotation
     glFlush();
     glutSwapBuffers();
 
@@ -177,7 +180,7 @@ void resize(int width, int height)
 
 void drawCube()
 {
-    glBindTexture(GL_TEXTURE_2D, LoadGLTextures("NeHe.bmp"));
+    glBindTexture(GL_TEXTURE_2D, tex_2d1);
     glBegin(GL_QUADS);
         // Front Face
         glNormal3f( 0.0f, 0.0f, 1.0f);
@@ -187,7 +190,6 @@ void drawCube()
         glTexCoord2f(0.0f, 1.0f); glVertex3f(-1.0f,  1.0f, 1.0f);
     glEnd();
 
-//    glBindTexture(GL_TEXTURE_2D, LoadGLTextures("NeHe.bmp"));
     glBegin(GL_QUADS);
         // Back Face
         glNormal3f( 0.0f, 0.0f,-1.0f);
@@ -197,7 +199,7 @@ void drawCube()
         glTexCoord2f(0.0f, 0.0f); glVertex3f( 1.0f, -1.0f, -1.0f);
     glEnd();
 
-    glBindTexture(GL_TEXTURE_2D, LoadGLTextures("floor.tga"));
+    glBindTexture(GL_TEXTURE_2D, tex_2d2);
     glBegin(GL_QUADS);
         // Top Face
         glNormal3f( 0.0f, 1.0f, 0.0f);
@@ -207,7 +209,6 @@ void drawCube()
         glTexCoord2f(1.0f, 1.0f); glVertex3f( 1.0f,  1.0f, -1.0f);
     glEnd();
 
-//    glBindTexture(GL_TEXTURE_2D, LoadGLTextures("floor.tga"));
     glBegin(GL_QUADS);
         // Bottom Face
         glNormal3f( 0.0f,-1.0f, 0.0f);
@@ -217,7 +218,7 @@ void drawCube()
         glTexCoord2f(1.0f, 0.0f); glVertex3f(-1.0f, -1.0f,  1.0f);
     glEnd();
 
-    glBindTexture(GL_TEXTURE_2D, LoadGLTextures("background.bmp"));
+    glBindTexture(GL_TEXTURE_2D, tex_2d2);
     glBegin(GL_QUADS);
         // Right face
         glNormal3f( 1.0f, 0.0f, 0.0f);
@@ -231,7 +232,7 @@ void drawCube()
     glEnable(GL_BLEND);
     glColor4f(1.0f, 1.0f, 1.0f, 1.0f);          //  Full Brightness. 50% Alpha
     glBlendFunc(GL_SRC_ALPHA, GL_ONE);
-    glBindTexture(GL_TEXTURE_2D, LoadGLTextures("background.bmp"));
+    glBindTexture(GL_TEXTURE_2D, tex_2d4);
     glBegin(GL_QUADS);
         // Left Face
         glNormal3f(-1.0f, 0.0f, 0.0f);
@@ -242,8 +243,6 @@ void drawCube()
     glEnd();
     glDisable(GL_BLEND);
 }
-
-
 
 
 
