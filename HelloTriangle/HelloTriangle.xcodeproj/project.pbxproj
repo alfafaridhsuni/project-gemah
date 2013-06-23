@@ -1,0 +1,246 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C28646BF17742C9A0091BD11 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C28646BE17742C9A0091BD11 /* main.cpp */; };
+		C28646C117742C9A0091BD11 /* HelloTriangle.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C28646C017742C9A0091BD11 /* HelloTriangle.1 */; };
+		C28646C817742CAB0091BD11 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28646C717742CAB0091BD11 /* OpenGL.framework */; };
+		C28646CA17742CB30091BD11 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28646C917742CB30091BD11 /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C28646B917742C9A0091BD11 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C28646C117742C9A0091BD11 /* HelloTriangle.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C21CD5CB1775EC6300345405 /* fragment.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragment.frag; sourceTree = "<group>"; };
+		C21CD5CC1775EC6300345405 /* hello.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = hello.vert; sourceTree = "<group>"; };
+		C25A99891774AD56007EDDEE /* Colored.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Colored.frag; sourceTree = "<group>"; };
+		C25A998A1774AD56007EDDEE /* Colored.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Colored.vert; sourceTree = "<group>"; };
+		C28646BB17742C9A0091BD11 /* HelloTriangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28646BE17742C9A0091BD11 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C28646C017742C9A0091BD11 /* HelloTriangle.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloTriangle.1; sourceTree = "<group>"; };
+		C28646C717742CAB0091BD11 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C28646C917742CB30091BD11 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C28646B817742C9A0091BD11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28646CA17742CB30091BD11 /* GLUT.framework in Frameworks */,
+				C28646C817742CAB0091BD11 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C28646B217742C9A0091BD11 = {
+			isa = PBXGroup;
+			children = (
+				C28646CB17742CB70091BD11 /* Lib */,
+				C28646BD17742C9A0091BD11 /* HelloTriangle */,
+				C28646BC17742C9A0091BD11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C28646BC17742C9A0091BD11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C28646BB17742C9A0091BD11 /* HelloTriangle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C28646BD17742C9A0091BD11 /* HelloTriangle */ = {
+			isa = PBXGroup;
+			children = (
+				C21CD5CB1775EC6300345405 /* fragment.frag */,
+				C21CD5CC1775EC6300345405 /* hello.vert */,
+				C25A99891774AD56007EDDEE /* Colored.frag */,
+				C25A998A1774AD56007EDDEE /* Colored.vert */,
+				C28646BE17742C9A0091BD11 /* main.cpp */,
+				C28646C017742C9A0091BD11 /* HelloTriangle.1 */,
+			);
+			path = HelloTriangle;
+			sourceTree = "<group>";
+		};
+		C28646CB17742CB70091BD11 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				C28646C917742CB30091BD11 /* GLUT.framework */,
+				C28646C717742CAB0091BD11 /* OpenGL.framework */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C28646BA17742C9A0091BD11 /* HelloTriangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28646C417742C9A0091BD11 /* Build configuration list for PBXNativeTarget "HelloTriangle" */;
+			buildPhases = (
+				C28646B717742C9A0091BD11 /* Sources */,
+				C28646B817742C9A0091BD11 /* Frameworks */,
+				C28646B917742C9A0091BD11 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTriangle;
+			productName = HelloTriangle;
+			productReference = C28646BB17742C9A0091BD11 /* HelloTriangle */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C28646B317742C9A0091BD11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "alfa suni";
+			};
+			buildConfigurationList = C28646B617742C9A0091BD11 /* Build configuration list for PBXProject "HelloTriangle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C28646B217742C9A0091BD11;
+			productRefGroup = C28646BC17742C9A0091BD11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C28646BA17742C9A0091BD11 /* HelloTriangle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C28646B717742C9A0091BD11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28646BF17742C9A0091BD11 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C28646C217742C9A0091BD11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C28646C317742C9A0091BD11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C28646C517742C9A0091BD11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C28646C617742C9A0091BD11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C28646B617742C9A0091BD11 /* Build configuration list for PBXProject "HelloTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28646C217742C9A0091BD11 /* Debug */,
+				C28646C317742C9A0091BD11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C28646C417742C9A0091BD11 /* Build configuration list for PBXNativeTarget "HelloTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28646C517742C9A0091BD11 /* Debug */,
+				C28646C617742C9A0091BD11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C28646B317742C9A0091BD11 /* Project object */;
+}
