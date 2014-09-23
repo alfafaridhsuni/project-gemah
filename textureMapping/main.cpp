@@ -1,4 +1,6 @@
-#include <GL/glut.h>
+// EDIT SEKARANG
+
+#include <GLUT/glut.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

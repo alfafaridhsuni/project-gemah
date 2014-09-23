@@ -11,8 +11,7 @@
 * Copyright 2010 by Alfa Faridh Suni
 *
 ************************************************************************/
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include <GLUT/glut.h>
 #include "NFreeImage.h"
 
 class NTexture

@@ -31,9 +31,9 @@
 
 1331149642 /usr/include/bits/predefs.h
 
-1331149662 /usr/include/sys/cdefs.h
-	<features.h>
-	<bits/wordsize.h>
+1334025035 /usr/include/sys/cdefs.h
+	<sys/_symbol_aliasing.h>
+	<sys/_posix_availability.h>
 
 1331149656 /usr/include/bits/wordsize.h
 
@@ -46,18 +46,12 @@
 
 1331149679 /usr/include/gnu/stubs-64.h
 
-1331149657 /usr/include/stdio.h
-	<features.h>
-	<stddef.h>
-	<bits/types.h>
-	<libio.h>
-	<stdarg.h>
-	<bits/stdio_lim.h>
-	<bits/sys_errlist.h>
-	<getopt.h>
-	<bits/stdio.h>
-	<bits/stdio2.h>
-	<bits/stdio-ldbl.h>
+1329878212 /usr/include/stdio.h
+	<sys/cdefs.h>
+	<Availability.h>
+	<_types.h>
+	<xlocale/_stdio.h>
+	<secure/_stdio.h>
 
 1331149660 /usr/include/bits/types.h
 	<features.h>
@@ -269,16 +263,14 @@
 
 1272520269 /usr/include/GL/gl_mangle.h
 
-1331149656 /usr/include/stdlib.h
-	<features.h>
-	<stddef.h>
-	<bits/waitflags.h>
-	<bits/waitstatus.h>
-	<xlocale.h>
-	<sys/types.h>
+1329878212 /usr/include/stdlib.h
+	<Availability.h>
+	<_types.h>
+	<sys/wait.h>
 	<alloca.h>
-	<bits/stdlib.h>
-	<bits/stdlib-ldbl.h>
+	<_xlocale.h>
+	<machine/types.h>
+	<xlocale/_stdlib.h>
 
 1331149660 /usr/include/bits/waitflags.h
 
@@ -295,13 +287,12 @@
 	<sys/sysmacros.h>
 	<bits/pthreadtypes.h>
 
-1331149662 /usr/include/sys/select.h
-	<features.h>
-	<bits/types.h>
-	<bits/select.h>
-	<bits/sigset.h>
-	<time.h>
-	<bits/time.h>
+1334025040 /usr/include/sys/select.h
+	<sys/appleapiopts.h>
+	<sys/cdefs.h>
+	<sys/_types.h>
+	<sys/_structs.h>
+	<sys/_select.h>
 
 1331149662 /usr/include/bits/select.h
 	<bits/wordsize.h>
@@ -309,9 +300,9 @@
 1331149660 /usr/include/sys/sysmacros.h
 	<features.h>
 
-1331149656 /usr/include/alloca.h
-	<features.h>
-	<stddef.h>
+1329878212 /usr/include/alloca.h
+	<sys/cdefs.h>
+	<_types.h>
 
 1331149656 /usr/include/bits/stdlib.h
 
@@ -359,15 +350,11 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1331149660 /usr/include/unistd.h
-	<features.h>
-	<bits/posix_opt.h>
-	<bits/environments.h>
-	<bits/types.h>
-	<stddef.h>
-	<bits/confname.h>
-	<getopt.h>
-	<bits/unistd.h>
+1329878213 /usr/include/unistd.h
+	<_types.h>
+	<sys/unistd.h>
+	<Availability.h>
+	<sys/select.h>
 
 1331149660 /usr/include/bits/posix_opt.h
 
@@ -377,4 +364,138 @@
 1331149660 /usr/include/bits/confname.h
 
 1331149660 /usr/include/bits/unistd.h
+
+1349104115 source:/Users/alfafaridh/project-gemah/textureMapping/main.cpp
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	"NTexture.h"
+
+1334025034 /usr/include/sys/_symbol_aliasing.h
+
+1334025034 /usr/include/sys/_posix_availability.h
+
+1306346746 /usr/include/Availability.h
+	<AvailabilityInternal.h>
+
+1306346746 /usr/include/AvailabilityInternal.h
+
+1329878212 /usr/include/_types.h
+	<sys/_types.h>
+
+1334025043 /usr/include/sys/_types.h
+	<sys/cdefs.h>
+	<machine/_types.h>
+
+1334025030 /usr/include/machine/_types.h
+	"i386/_types.h"
+	"arm/_types.h"
+
+1334025073 /usr/include/i386/_types.h
+
+1329878212 /usr/include/xlocale/_stdio.h
+
+1329878212 /usr/include/secure/_stdio.h
+	<secure/_common.h>
+
+1329878212 /usr/include/secure/_common.h
+
+1334025043 /usr/include/sys/wait.h
+	<sys/cdefs.h>
+	<sys/_types.h>
+	<sys/signal.h>
+	<sys/resource.h>
+	<machine/endian.h>
+
+1334025040 /usr/include/sys/signal.h
+	<sys/cdefs.h>
+	<sys/appleapiopts.h>
+	<machine/signal.h>
+	<sys/_types.h>
+	<sys/_structs.h>
+
+1334025035 /usr/include/sys/appleapiopts.h
+
+1334025029 /usr/include/machine/signal.h
+	"i386/signal.h"
+	"arm/signal.h"
+
+1334025072 /usr/include/i386/signal.h
+	<sys/cdefs.h>
+	<sys/appleapiopts.h>
+	<i386/_structs.h>
+
+1334025072 /usr/include/i386/_structs.h
+	<sys/appleapiopts.h>
+	<mach/i386/_structs.h>
+
+1334025073 /usr/include/mach/i386/_structs.h
+
+1334025043 /usr/include/sys/_structs.h
+	<sys/cdefs.h>
+	<sys/_types.h>
+	<machine/_structs.h>
+
+1334025030 /usr/include/machine/_structs.h
+	"i386/_structs.h"
+	"arm/_structs.h"
+
+1334025040 /usr/include/sys/resource.h
+	<sys/appleapiopts.h>
+	<sys/cdefs.h>
+	<sys/_types.h>
+	<Availability.h>
+	<sys/_structs.h>
+
+1334025028 /usr/include/machine/endian.h
+	"i386/endian.h"
+	"arm/endian.h"
+
+1334025071 /usr/include/i386/endian.h
+	<sys/cdefs.h>
+	<sys/_endian.h>
+
+1334025043 /usr/include/sys/_endian.h
+	<sys/cdefs.h>
+	<libkern/_OSByteOrder.h>
+
+1334025034 /usr/include/libkern/_OSByteOrder.h
+	<sys/_types.h>
+	<libkern/i386/_OSByteOrder.h>
+	<libkern/arm/OSByteOrder.h>
+
+1334025072 /usr/include/libkern/i386/_OSByteOrder.h
+
+1329878212 /usr/include/_xlocale.h
+	<sys/cdefs.h>
+
+1334025029 /usr/include/machine/types.h
+	"i386/types.h"
+	"arm/types.h"
+
+1334025072 /usr/include/i386/types.h
+	<i386/_types.h>
+	<sys/cdefs.h>
+
+1329878212 /usr/include/xlocale/_stdlib.h
+
+1334025042 /usr/include/sys/unistd.h
+	<sys/cdefs.h>
+
+1334025043 /usr/include/sys/_select.h
+
+1366399886 /Users/alfafaridh/project-gemah/textureMapping/NTexture.h
+	<GLUT/glut.h>
+	"NFreeImage.h"
+
+1349104115 /Users/alfafaridh/project-gemah/textureMapping/NFreeImage.h
+	<FreeImage.h>
+	<string>
+
+1349104115 source:/Users/alfafaridh/project-gemah/textureMapping/NFreeImage.cpp
+	"NFreeImage.h"
+
+1349104115 source:/Users/alfafaridh/project-gemah/textureMapping/NTexture.cpp
+	"NTexture.h"
 
