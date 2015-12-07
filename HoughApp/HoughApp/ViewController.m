@@ -78,6 +78,17 @@
     [self presentViewController:picker animated:YES completion:NULL];
 }
 
+- (IBAction)processPhoto:(UIButton *)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
 #pragma mark - Image Picker Controller delegate methods
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
@@ -87,6 +98,7 @@
     
     NSArray *imageData = [self getRGBAsFromImage:chosenImage atX:1 andY:1 count:10];
     
+    NSLog(@"%@", imageData);
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
     

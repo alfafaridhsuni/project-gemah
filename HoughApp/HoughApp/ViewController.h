@@ -16,7 +16,7 @@
 
 - (IBAction)takePhoto:(UIButton *)sender;
 - (IBAction)selectPhoto:(UIButton *)sender;
-
+- (IBAction)processPhoto:(UIButton *)sender;
 
 @end
 
