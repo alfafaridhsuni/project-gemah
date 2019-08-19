@@ -98,10 +98,10 @@ GLuint CreateProgram(const std::vector<GLuint> &shaderList)
 
 GLuint theProgram;
 
-const std::string strVertexShader = "/Users/alfafaridh/Programming/OpenGL/Learning Modern 3D Graphics Programming/HelloTriangle/HelloTriangle/hello.vert";
+const std::string strVertexShader = "/Users/alfasuni/Documents/PROGRAMMING/HelloTriangle/HelloTriangle/hello.vert";
 //("#version 120\nvoid main()\n{\ngl_Position = gl_Vertex;\n}\n");
 
-const std::string strFragmentShader = "/Users/alfafaridh/Programming/OpenGL/Learning Modern 3D Graphics Programming/HelloTriangle/HelloTriangle/fragment.frag";
+const std::string strFragmentShader = "/Users/alfasuni/Documents/PROGRAMMING/HelloTriangle/HelloTriangle/fragment.frag";
 //("#version 120\nvoid main()\n{\ngl_FragColor = vec4(1.0, 1.0, 0.0, 1.0);\n}\n");
 
 void InitializeProgram()
@@ -186,7 +186,8 @@ void keyboard(unsigned char key, int x, int y)
 	{
         case 27:
 //            glutLeaveMainLoop();
-            glutLeaveGameMode();
+//            glutLeaveGameMode();
+            exit(0)
             return;
 	}
 }
