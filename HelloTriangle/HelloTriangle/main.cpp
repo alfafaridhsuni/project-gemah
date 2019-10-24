@@ -187,7 +187,7 @@ void keyboard(unsigned char key, int x, int y)
         case 27:
 //            glutLeaveMainLoop();
 //            glutLeaveGameMode();
-            exit(0)
+            exit(0);
             return;
 	}
 }
