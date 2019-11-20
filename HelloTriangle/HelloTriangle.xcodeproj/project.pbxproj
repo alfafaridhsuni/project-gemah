@@ -7,35 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FF99D2023632D6200D970D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF99D1F23632D6200D970D8 /* Cocoa.framework */; };
+		7FF99D2223632D7F00D970D8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF99D2123632D7F00D970D8 /* IOKit.framework */; };
+		7FF99D2623632E8B00D970D8 /* ShaderTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FF99D2423632E8B00D970D8 /* ShaderTools.cpp */; };
+		7FF99D2923632EE300D970D8 /* MyRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FF99D2723632EE300D970D8 /* MyRenderer.cpp */; };
+		7FF99D2B2363324D00D970D8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28646C717742CAB0091BD11 /* OpenGL.framework */; };
+		7FF99D2D2363326C00D970D8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF99D2C2363326C00D970D8 /* CoreVideo.framework */; };
+		7FF99D342363379300D970D8 /* libglfw.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF99D332363379300D970D8 /* libglfw.3.dylib */; };
+		7FF99D352363379300D970D8 /* libglfw.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 7FF99D332363379300D970D8 /* libglfw.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		C28646BF17742C9A0091BD11 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C28646BE17742C9A0091BD11 /* main.cpp */; };
-		C28646C117742C9A0091BD11 /* HelloTriangle.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C28646C017742C9A0091BD11 /* HelloTriangle.1 */; };
-		C28646C817742CAB0091BD11 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28646C717742CAB0091BD11 /* OpenGL.framework */; };
-		C28646CA17742CB30091BD11 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28646C917742CB30091BD11 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7FF99D312363329500D970D8 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7FF99D352363379300D970D8 /* libglfw.3.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C28646B917742C9A0091BD11 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				C28646C117742C9A0091BD11 /* HelloTriangle.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7FF99D1C23632CFD00D970D8 /* GLFW */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GLFW; path = HelloTriangle/GLFW; sourceTree = "<group>"; };
+		7FF99D1F23632D6200D970D8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7FF99D2123632D7F00D970D8 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		7FF99D2423632E8B00D970D8 /* ShaderTools.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderTools.cpp; sourceTree = "<group>"; };
+		7FF99D2523632E8B00D970D8 /* ShaderTools.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderTools.hpp; sourceTree = "<group>"; };
+		7FF99D2723632EE300D970D8 /* MyRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyRenderer.cpp; sourceTree = "<group>"; };
+		7FF99D2823632EE300D970D8 /* MyRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyRenderer.hpp; sourceTree = "<group>"; };
+		7FF99D2C2363326C00D970D8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7FF99D322363342700D970D8 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = HelloTriangle/libglfw3.a; sourceTree = "<group>"; };
+		7FF99D332363379300D970D8 /* libglfw.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.dylib; path = HelloTriangle/libglfw.3.dylib; sourceTree = "<group>"; };
 		C21CD5CB1775EC6300345405 /* fragment.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragment.frag; sourceTree = "<group>"; };
 		C21CD5CC1775EC6300345405 /* hello.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = hello.vert; sourceTree = "<group>"; };
 		C25A99891774AD56007EDDEE /* Colored.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Colored.frag; sourceTree = "<group>"; };
 		C25A998A1774AD56007EDDEE /* Colored.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Colored.vert; sourceTree = "<group>"; };
 		C28646BB17742C9A0091BD11 /* HelloTriangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28646BE17742C9A0091BD11 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		C28646C017742C9A0091BD11 /* HelloTriangle.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloTriangle.1; sourceTree = "<group>"; };
 		C28646C717742CAB0091BD11 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		C28646C917742CB30091BD11 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,20 +66,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28646CA17742CB30091BD11 /* GLUT.framework in Frameworks */,
-				C28646C817742CAB0091BD11 /* OpenGL.framework in Frameworks */,
+				7FF99D2023632D6200D970D8 /* Cocoa.framework in Frameworks */,
+				7FF99D2B2363324D00D970D8 /* OpenGL.framework in Frameworks */,
+				7FF99D2223632D7F00D970D8 /* IOKit.framework in Frameworks */,
+				7FF99D342363379300D970D8 /* libglfw.3.dylib in Frameworks */,
+				7FF99D2D2363326C00D970D8 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FF99D1D23632D3700D970D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF99D332363379300D970D8 /* libglfw.3.dylib */,
+				7FF99D322363342700D970D8 /* libglfw3.a */,
+				7FF99D2C2363326C00D970D8 /* CoreVideo.framework */,
+				7FF99D2123632D7F00D970D8 /* IOKit.framework */,
+				7FF99D1F23632D6200D970D8 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C28646B217742C9A0091BD11 = {
 			isa = PBXGroup;
 			children = (
+				7FF99D1C23632CFD00D970D8 /* GLFW */,
 				C28646CB17742CB70091BD11 /* Lib */,
 				C28646BD17742C9A0091BD11 /* HelloTriangle */,
 				C28646BC17742C9A0091BD11 /* Products */,
+				7FF99D1D23632D3700D970D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,7 +116,10 @@
 				C25A99891774AD56007EDDEE /* Colored.frag */,
 				C25A998A1774AD56007EDDEE /* Colored.vert */,
 				C28646BE17742C9A0091BD11 /* main.cpp */,
-				C28646C017742C9A0091BD11 /* HelloTriangle.1 */,
+				7FF99D2423632E8B00D970D8 /* ShaderTools.cpp */,
+				7FF99D2523632E8B00D970D8 /* ShaderTools.hpp */,
+				7FF99D2723632EE300D970D8 /* MyRenderer.cpp */,
+				7FF99D2823632EE300D970D8 /* MyRenderer.hpp */,
 			);
 			path = HelloTriangle;
 			sourceTree = "<group>";
@@ -84,7 +127,6 @@
 		C28646CB17742CB70091BD11 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				C28646C917742CB30091BD11 /* GLUT.framework */,
 				C28646C717742CAB0091BD11 /* OpenGL.framework */,
 			);
 			name = Lib;
@@ -100,6 +142,7 @@
 				C28646B717742C9A0091BD11 /* Sources */,
 				C28646B817742C9A0091BD11 /* Frameworks */,
 				C28646B917742C9A0091BD11 /* CopyFiles */,
+				7FF99D312363329500D970D8 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -142,7 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF99D2623632E8B00D970D8 /* ShaderTools.cpp in Sources */,
 				C28646BF17742C9A0091BD11 /* main.cpp in Sources */,
+				7FF99D2923632EE300D970D8 /* MyRenderer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +289,11 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelloTriangle",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +303,11 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelloTriangle",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
